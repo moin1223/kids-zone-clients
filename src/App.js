@@ -1,24 +1,78 @@
 import logo from './logo.svg';
 import './App.css';
+import Home from './Components/Home/Home/Home';
+import Navbar from './Components/Home/Navbar/Navbar';
+import Login from './Components/Login/Login'
+import NotFound from './Components/NotFound/NotFound';
+import AdmitCourse from './Components/AdmitCourse/AdmitCourse'
+import MyCourses from './Components/Home/MyCourses/MyCourses'
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute'
+import AllAdmisson from './Components/Admin/AllAdmisson/AllAdmisson';
+import AddCourse from './Components/Admin/AddCourse/AddCourse';
+import AddReviews from './Components/Admin/AddReviews/AddReviews';
+import AddAdmin from './Components/Admin/AddAdmin/AddAdmin';
+import Footer from './Components/Home/Footer/Footer';
+
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <Switch>
+
+
+        <Route path="/home">
+          <Home />
+        </Route>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/login">
+          <Login />
+        </Route>
+
+        <PrivateRoute path="/admitCourse/:id">
+
+          <AdmitCourse />
+        </PrivateRoute>
+        <PrivateRoute path="/MyCourses">
+          <MyCourses />
+        </PrivateRoute>
+
+
+
+        <PrivateRoute path="/allAdmission">
+          <AllAdmisson />
+        </PrivateRoute>
+        <PrivateRoute path="/addCourse">
+
+        <AddCourse></AddCourse>
+        </PrivateRoute>
+        <PrivateRoute path="/addReview">
+
+          <AddReviews></AddReviews>
+        </PrivateRoute>
+        <PrivateRoute path="/addAdmin">
+
+          <AddAdmin />
+        </PrivateRoute>
+
+
+
+        <Route path="*">
+          <NotFound />
+        </Route>
+
+      </Switch>
+      <Footer></Footer>
+    </Router>
   );
 }
 
