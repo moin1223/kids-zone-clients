@@ -9,7 +9,7 @@ const AllReviews = () => {
         fetch('https://still-eyrie-79056.herokuapp.com/Reviews')
         .then(res => res.json())
         .then(data =>setReviews(data))
-    },[id])
+    },[])
 
     return (
         <section className="services-container mt-5">

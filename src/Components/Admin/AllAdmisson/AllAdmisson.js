@@ -11,7 +11,7 @@ const AllAdmisson = () => {
         fetch(`https://still-eyrie-79056.herokuapp.com/Admissions`)
             .then(res => res.json())
             .then(data =>  setAdmissions(data))
-    },[id])
+    },[])
 
     return (
         <div className="container">
