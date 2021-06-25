@@ -6,7 +6,7 @@ const MySingleCourse = (props) => {
     console.log(props)
 
     const course = props.course;
-    const { _id, userName, courseName, date, img,coursePrise } = course;
+    const { _id, userName, courseName, date, img} = course;
     const history = useHistory();
 
     const handleDelete = () => {

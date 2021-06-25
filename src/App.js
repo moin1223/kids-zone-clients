@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Home from './Components/Home/Home/Home';
 import Navbar from './Components/Home/Navbar/Navbar';
@@ -17,8 +16,7 @@ import AddAdmin from './Components/Admin/AddAdmin/AddAdmin';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 function App() {

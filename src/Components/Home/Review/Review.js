@@ -4,7 +4,6 @@ const Review = (props) => {
     const user = JSON.parse(localStorage.getItem('user'));
     
     const review = props.review;
-    const {Name,Description} = review;
     return (
         <div className="col-md-4 text-center">
             <img style={{height: '50px'}} src={user.img} alt="" />

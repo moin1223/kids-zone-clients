@@ -4,12 +4,12 @@ import { useHistory } from 'react-router';
 const SingleAdmission = (props) => {
 
     const add = props.add;
-    const { _id, userName, courseName, date,email, img,coursePrise } = add;
+    const { _id, userName, courseName, date,email} = add;
     const history = useHistory();
 
 
     const handleDelete = () => {
-        fetch(`https://still-eyrie-79056.herokuapp.com/deleteAdmission/${_id}`, {
+        fetch(`http://localhost:5000/deleteAdmission/${_id}`, {
             method: 'DELETE',
         })
         .then(res => res.json())

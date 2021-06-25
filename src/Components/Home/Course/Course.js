@@ -6,7 +6,7 @@ import './Course.css';
 const Course = (props) => {
 
     const course = props.course;
-    const {_id,CourseName,price} = course;
+    const {_id,CourseName} = course;
     console.log(props.course)
     const imageStyle = { height: '150px', width: '150px' }
 

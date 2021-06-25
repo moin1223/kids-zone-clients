@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { useHistory, useParams } from 'react-router';
-import Course from '../Home/Course/Course';
+import {useParams } from 'react-router';
 import ProcessPayment from '../Home/ProcessPayment/ProcessPayment';
 
 const AdmitCourse= () => {
     const { id } = useParams();
-    const history = useHistory();
     // console.log(id)
     const user = JSON.parse(localStorage.getItem('user'));
     const [course,setCourse]=useState({})
