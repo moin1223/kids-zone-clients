@@ -9,7 +9,7 @@ const AllCourse = () => {
         fetch('https://still-eyrie-79056.herokuapp.com/courses')
         .then(res => res.json())
         .then(data =>setCourses(data))
-    }, [])
+    },[id])
 
    
     return (

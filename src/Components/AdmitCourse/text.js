@@ -50,7 +50,7 @@ const AdmitCourse= () => {
                 newAdmissionData.img = data.image
                 setAdmissionData(newAdmissionData)
             })
-    }, [])
+    },[id])
 
     return (
        <div className="row">
