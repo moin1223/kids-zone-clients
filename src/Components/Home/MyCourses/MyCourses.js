@@ -11,7 +11,7 @@ const MyCourses = () => {
         fetch(`https://still-eyrie-79056.herokuapp.com/Admission/${user.email}`)
             .then(res => res.json())
             .then(data => setMyCourses(data))
-    },[])
+    },[user.email])
 
     return (
         <div className="container">
