@@ -11,7 +11,7 @@ import AllAdmisson from './Components/Admin/AllAdmisson/AllAdmisson';
 import AddCourse from './Components/Admin/AddCourse/AddCourse';
 import AddReviews from './Components/Admin/AddReviews/AddReviews';
 import AddAdmin from './Components/Admin/AddAdmin/AddAdmin';
-import Footer from './Components/Home/Footer/Footer';
+
 
 
 import {
@@ -71,7 +71,7 @@ function App() {
         </Route>
 
       </Switch>
-      <Footer></Footer>
+      
     </Router>
   );
 }
