@@ -3,10 +3,10 @@ import './Footer.css';
 
 const Footer = () => {
     return (
-        <footer class="footer">
-  	 <div class="container">
-  	 	<div class="row">
-  	 		<div class="footer-col">
+        <footer className"footer">
+  	 <div className"container">
+  	 	<div className"row">
+  	 		<div className"footer-col">
                    <h4>Kids Zone</h4>
   	 			<ul>
   	 				<li><a href="#">about us</a></li>
@@ -15,7 +15,7 @@ const Footer = () => {
   	 				<li><a href="#">Events</a></li>
   	 			</ul>
   	 		</div>
-  	 		<div class="footer-col">
+  	 		<div className"footer-col">
                    <h4>Our Programs</h4>
   	 			<ul>
 					<li><a href="#">Arabic</a></li>
@@ -26,7 +26,7 @@ const Footer = () => {
   	 			</ul>
   	 		</div>
                
-  	 		<div class="footer-col">
+  	 		<div className"footer-col">
                    <h4>Our Programs</h4>
   	 			<ul>
 					<li><a href="#">Arabic</a></li>
@@ -36,13 +36,13 @@ const Footer = () => {
   	 				<li><a href="#"> kids math</a></li>
   	 			</ul>
   	 		</div>
-  	 		<div class="footer-col">
+  	 		<div className"footer-col">
   	 			<h4>follow us</h4>
-  	 			<div class="social-links">
-  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
-  	 				<a href="#"><i class="fab fa-twitter"></i></a>
-  	 				<a href="#"><i class="fab fa-instagram"></i></a>
-  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+  	 			<div className"social-links">
+  	 				<a href="#"><i className"fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i className"fab fa-twitter"></i></a>
+  	 				<a href="#"><i className"fab fa-instagram"></i></a>
+  	 				<a href="#"><i className"fab fa-linkedin-in"></i></a>
   	 			</div>
   	 		</div>
   	 	</div>
